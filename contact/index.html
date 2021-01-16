@@ -1,0 +1,358 @@
+<!doctype html>
+
+<html lang="ru">
+<head>
+	<title>Чайный Клуб</title>
+
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<link href="/favicon.ico" rel="shortcut icon" >
+
+	
+		 <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap&subset=cyrillic" rel="stylesheet">
+		 <link rel="stylesheet" href="/fonts/font-awesome/css/all.min.css">
+
+	
+			 <link rel="stylesheet" href="/styles/third-party/bootstrap.css">
+			 <link rel="stylesheet" href="/styles/css/main.css">
+</head>
+
+<body>
+	
+		 <script src="/js/third-party/jquery.js"></script>
+
+	<header id="header" class="header-container">
+	<div id="header-navbar-toggler" class="d-block d-lg-none">
+		<button onclick="toggleMobileNavbar()">
+			<i class="fas fa-bars fa-2x text-muted" style="padding-top: 4px;"></i>
+		</button>
+	</div>
+	<div id="header-logo">
+		<a href="/">
+			<img src="/images/logo.png" alt="logo">
+		</a>
+	</div>
+	<nav id="header-navbar" class="navbar navbar-expand-lg justify-content-between d-none d-lg-flex">
+            <div class="header-navbar-links">
+	<a id="header-about" class="text-nowrap" href="/about">О нас</a>
+	<a id="header-join" class="text-nowrap" href="/join">Вступить</a>
+	<div class="paired">
+		<a id="header-donate" class="text-nowrap" href="/donate">Поддержать</a>
+		<a id="header-contact" class="text-nowrap" href="/contact">Контакты</a>
+	</div>
+</div>
+
+			<div id="header-social-icons">
+	<a href="#"><i class="fab fa-telegram fa-lg"></i></a>
+	<a href="#"><i class="fab fa-vk fa-lg"></i></a>
+	<a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+	<a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+	<a href="#"><i class="fab fa-twitter fa-lg"></i></i></a>
+	<a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+	<a href="#"><i class="fa fa-envelope fa-lg"></i></a>
+</div>
+
+	</nav>
+	<div id="header-search" class="d-flex">
+		<div class="d-inline-flex justify-content-end align-items-center header-search-input-container">
+			<button class="d-none d-lg-inline-block navbar-toggler" type="button" onclick="focusSearch()">
+				<i class="fas fa-search fa-m"></i>
+			</button>
+			<input class="form-control border-0" type="text" placeholder="Поиск" id="header-search-input">
+		</div>
+		<button class="d-block d-lg-none" onclick="toggleMobileSearch()">
+			<i id="header-search-icon-mobile" class="fas fa-search fa-2x text-muted"  style="padding-top: 0px;"></i>
+		</button>
+	</div>
+</header>
+
+	<div class="main-container">
+		<div class="content-container">	
+            <script>
+	$('#header-contact').addClass('active');
+</script>
+
+<h1>Контакты</h1>
+
+<div class="contact-cards">
+	
+<div class="card">
+	<img src="/images/logo.png" class="contained">
+	<div class="card-body">
+		<h5 class="card-title"> Пресс-служба </h5>
+		<p class="card-text"> Контакт для связи по любым вопросам, вам ответит уполномоченый представитель</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/contained"><i class="fab fa-telegram fa-lg"></i> libteaclub_bot </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> contact@libtea.club</a></div>
+	</div>
+</div>
+
+	
+<div class="card">
+	<img src="/images/contact/demo-photo.jpg">
+	<div class="card-body">
+		<h5 class="card-title">Иванов Иван</h5>
+		<p class="card-text">Член Регионального Совета</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-telegram fa-lg"></i> krealnummftp </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> hellokittlong-long-lnog </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> killmeplz@libtea.club</a></div>
+	</div>
+</div>
+
+</div>
+
+<h2>Региональные представители</h2>
+
+<div id="city-name-accordion" class="in-text">
+
+	<div class="card">
+		<button class="card-header btn btn-block" id="btn-msk" data-toggle="collapse" data-target="#collapse-msk" >
+			Москва
+		</button>
+		<div id="collapse-msk" class="collapse">
+			<div class="contact-cards">
+				
+<div class="card">
+	<img src="/images/contact/demo-photo.jpg">
+	<div class="card-body">
+		<h5 class="card-title">Я ниибаццо длинное <br>имя в две строки</h5>
+		<p class="card-text">Я ниибаццо длинная должность <br> в две строки минимум</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-telegram fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> killmeplz@libtea.club</a></div>
+	</div>
+</div>
+
+				
+<div class="card">
+	<img src="/images/contact/demo-photo.jpg">
+	<div class="card-body">
+		<h5 class="card-title">Никита Цветков</h5>
+		<p class="card-text">Председатель</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-telegram fa-lg"></i> krealnu </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> hellokitt </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> killmeplz@libtea.club</a></div>
+	</div>
+</div>
+
+				
+<div class="card">
+	<img src="/images/contact/demo-photo.jpg">
+	<div class="card-body">
+		<h5 class="card-title">Иванов Иван</h5>
+		<p class="card-text">Член Регионального Совета</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-telegram fa-lg"></i> krealnummftp </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> hellokittlong-long-lnog </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> killmeplz@libtea.club</a></div>
+	</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<button class="card-header btn btn-block" id="btn-spb" data-toggle="collapse" data-target="#collapse-spb">
+			Санкт-Петербург
+		</button>
+		<div id="collapse-spb" class="collapse">
+			<div class="contact-cards">
+				
+<div class="card">
+	<img src="/images/contact/demo-photo.jpg">
+	<div class="card-body">
+		<h5 class="card-title">Я ниибаццо длинное <br>имя в две строки</h5>
+		<p class="card-text">Я ниибаццо длинная должность <br> в две строки минимум</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-telegram fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> killmeplz@libtea.club</a></div>
+	</div>
+</div>
+
+				
+<div class="card">
+	<img src="/images/contact/demo-photo.jpg">
+	<div class="card-body">
+		<h5 class="card-title">Я ниибаццо длинное <br>имя в две строки</h5>
+		<p class="card-text">Я ниибаццо длинная должность <br> в две строки минимум</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-telegram fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> killmeplz@libtea.club</a></div>
+	</div>
+</div>
+
+				
+<div class="card">
+	<img src="/images/contact/demo-photo.jpg">
+	<div class="card-body">
+		<h5 class="card-title">Иванов Иван</h5>
+		<p class="card-text">Член Регионального Совета</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-telegram fa-lg"></i> krealnummftp </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> hellokittlong-long-lnog </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> killmeplz@libtea.club</a></div>
+	</div>
+</div>
+
+				
+<div class="card">
+	<img src="/images/contact/demo-photo.jpg">
+	<div class="card-body">
+		<h5 class="card-title">Я ниибаццо длинное <br>имя в две строки</h5>
+		<p class="card-text">Я ниибаццо длинная должность <br> в две строки минимум</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-telegram fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> killmeplz@libtea.club</a></div>
+	</div>
+</div>
+
+				
+<div class="card">
+	<img src="/images/contact/demo-photo.jpg">
+	<div class="card-body">
+		<h5 class="card-title">Никита Цветков</h5>
+		<p class="card-text">Председатель</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-telegram fa-lg"></i> krealnu </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> hellokitt </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> killmeplz@libtea.club</a></div>
+	</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<button class="card-header btn btn-block" id="btn-zlp1" data-toggle="collapse" data-target="#collapse-zlp1">
+			Новая залупа
+		</button>
+		<div id="collapse-zlp1" class="collapse">
+			<div class="contact-cards">
+				
+<div class="card">
+	<img src="/images/contact/demo-photo.jpg">
+	<div class="card-body">
+		<h5 class="card-title">Я ниибаццо длинное <br>имя в две строки</h5>
+		<p class="card-text">Я ниибаццо длинная должность <br> в две строки минимум</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-telegram fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> killmeplz@libtea.club</a></div>
+	</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<button class="card-header btn btn-block" id="btn-zlp2" data-toggle="collapse" data-target="#collapse-zlp2">
+			Старая залупа
+		</button>
+		<div id="collapse-zlp2" class="collapse">
+			<div class="contact-cards">
+				
+<div class="card">
+	<img src="/images/contact/demo-photo.jpg">
+	<div class="card-body">
+		<h5 class="card-title">Я ниибаццо длинное <br>имя в две строки</h5>
+		<p class="card-text">Я ниибаццо длинная должность <br> в две строки минимум</p>
+	</div>
+	<div class="spacer"></div>
+	<div class="contact-info list-group list-group-flush">
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-telegram fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="http://t.me/krealnum"><i class="fab fa-vk fa-lg"></i> </a></div>
+		<div class="list-group-item"> <a class="text-nowrap" href="m"><i class="fa fa-envelope fa-lg"></i> killmeplz@libtea.club</a></div>
+	</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+		</div>
+		<div class="sidebar-container">
+			<div id="twitter-block" class="twitter-block">
+	<a class="twitter-timeline" data-lang="ru" data-dnt="true" data-height="810" href="https://twitter.com/libteaclub?ref_src=twsrc%5Etfw">
+		Последние события нашего движения из Твиттера
+	</a>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
+<div class="banner-container">
+    <a href = "/about">
+        <img class="banner" src="/images/banner.png">
+    </a>
+</div>
+
+		</div>
+	</div>
+	<footer>
+    <nav>
+	<a class="text-nowrap" href="/">Главная</a>
+	<a class="text-nowrap" href="/about">О нас</a>
+	<a class="text-nowrap" href="/join">Вступить</a>
+	<a class="text-nowrap" href="/donate">Поддержать</a>
+	<a class="text-nowrap" href="/contact">Контакты</a>
+</nav>
+
+    
+    <div id="footer-social-icons">
+	<a href="#"><i class="fab fa-telegram fa-lg"></i></a>
+	<a href="#"><i class="fab fa-vk fa-lg"></i></a>
+	<a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+	<a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+	<a href="#"><i class="fab fa-twitter fa-lg"></i></i></a>
+	<a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+	<a href="#"><i class="fa fa-envelope fa-lg"></i></a>
+</div>
+
+</footer>
+
+
+	
+		 <script src="/js/third-party/bootstrap.js"></script>
+		 <script src="/js/main.js"></script>
+</body>
+</html>
