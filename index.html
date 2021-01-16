@@ -1,0 +1,229 @@
+<!doctype html>
+
+<html lang="ru">
+<head>
+	<title>Чайный Клуб</title>
+
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<link href="/favicon.ico" rel="shortcut icon" >
+
+	
+		 <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap&subset=cyrillic" rel="stylesheet">
+		 <link rel="stylesheet" href="/fonts/font-awesome/css/all.min.css">
+
+	
+			 <link rel="stylesheet" href="/styles/third-party/bootstrap.css">
+			 <link rel="stylesheet" href="/styles/css/main.css">
+</head>
+
+<body>
+	
+		 <script src="/js/third-party/jquery.js"></script>
+
+	<header id="header" class="header-container">
+	<div id="header-navbar-toggler" class="d-block d-lg-none">
+		<button onclick="toggleMobileNavbar()">
+			<i class="fas fa-bars fa-2x text-muted" style="padding-top: 4px;"></i>
+		</button>
+	</div>
+	<div id="header-logo">
+		<a href="/">
+			<img src="/images/logo.png" alt="logo">
+		</a>
+	</div>
+	<nav id="header-navbar" class="navbar navbar-expand-lg justify-content-between d-none d-lg-flex">
+            <div class="header-navbar-links">
+	<a id="header-about" class="text-nowrap" href="/about">О нас</a>
+	<a id="header-join" class="text-nowrap" href="/join">Вступить</a>
+	<div class="paired">
+		<a id="header-donate" class="text-nowrap" href="/donate">Поддержать</a>
+		<a id="header-contact" class="text-nowrap" href="/contact">Контакты</a>
+	</div>
+</div>
+
+			<div id="header-social-icons">
+	<a href="#"><i class="fab fa-telegram fa-lg"></i></a>
+	<a href="#"><i class="fab fa-vk fa-lg"></i></a>
+	<a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+	<a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+	<a href="#"><i class="fab fa-twitter fa-lg"></i></i></a>
+	<a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+	<a href="#"><i class="fa fa-envelope fa-lg"></i></a>
+</div>
+
+	</nav>
+	<div id="header-search" class="d-flex">
+		<div class="d-inline-flex justify-content-end align-items-center header-search-input-container">
+			<button class="d-none d-lg-inline-block navbar-toggler" type="button" onclick="focusSearch()">
+				<i class="fas fa-search fa-m"></i>
+			</button>
+			<input class="form-control border-0" type="text" placeholder="Поиск" id="header-search-input">
+		</div>
+		<button class="d-block d-lg-none" onclick="toggleMobileSearch()">
+			<i id="header-search-icon-mobile" class="fas fa-search fa-2x text-muted"  style="padding-top: 0px;"></i>
+		</button>
+	</div>
+</header>
+
+	<div class="main-container">
+		<div class="content-container">	
+            <div id="main-card-list" class="card-columns">
+    
+    <div class="card">
+    <a href=".">
+        <img class="card-img-top" src="/images/card-preview.png">
+    </a>
+    <div class="card-body">
+        <a href="."><h5 class="card-title">Как в Санкт-Петербурге оппозиционных депутатов лишают мандатов по надуманным поводам
+        </h5></a>
+        <div class="date">28 июня 2020</div>
+        <p class="card-text">
+            Казалось бы, петербуржцы выбрали своих муниципальных депутатов совсем недавно.
+        </p>
+    </div>
+</div>
+
+    <div class="card">
+    <a href=".">
+        <div class="card-img-container">
+                <img class="card-img-top" src="/images/banner.png">
+        </div>
+    </a>
+    <div class="card-body">
+        <a href="."><h5 class="card-title">
+            Сомы грамм — и... много драм. Как государство борется с наркотиками
+        </h5></a>
+        <div class="date">28 июня 2020</div>
+        <p class="card-text">
+            В последние годы мы слышим много противоречивых новостей о наркотиках. В Канаде легализуют марихуану, в Средней Азии растет производство героина, президент Филиппин обещает «накормить рыб в бухте Манилы телами наркоторговцев». Президент России говорит: «никакой либерализации [наркополитики] быть не может», похожее мнение высказывает главный борец с наркотиками на территории РФ Евгений Ройзман: «введение уголовного наказания за употребление наркотиков действительно может уменьшить число наркоманов в РФ». Мы изучили множество источников, доводов и исследований за последние два десятка лет, чтобы отделить статистику от информационного шума и оценить результаты подходов правительств разных стран в отношении запрещенных веществ. Эта статья ни в коем случае не пропагандирует употребление наркотических веществ ни в каком виде. Берегите себя и своё здоровье.
+        </p>
+    </div>
+</div>
+
+    <div class="card">
+    <a href=".">
+        <img class="card-img-top" src="/images/card-preview.png">
+    </a>
+    <div class="card-body">
+        <a href="."><h5 class="card-title">Как в Санкт-Петербурге оппозиционных депутатов лишают мандатов по надуманным поводам
+        </h5></a>
+        <div class="date">28 июня 2020</div>
+        <p class="card-text">
+            Казалось бы, петербуржцы выбрали своих муниципальных депутатов совсем недавно.
+        </p>
+    </div>
+</div>
+
+    <div class="card">
+    <a href=".">
+        <div class="card-img-container">
+                <img class="card-img-top" src="/images/banner.png">
+        </div>
+    </a>
+    <div class="card-body">
+        <a href="."><h5 class="card-title">
+            Сомы грамм — и... много драм. Как государство борется с наркотиками
+        </h5></a>
+        <div class="date">28 июня 2020</div>
+        <p class="card-text">
+            В последние годы мы слышим много противоречивых новостей о наркотиках. В Канаде легализуют марихуану, в Средней Азии растет производство героина, президент Филиппин обещает «накормить рыб в бухте Манилы телами наркоторговцев». Президент России говорит: «никакой либерализации [наркополитики] быть не может», похожее мнение высказывает главный борец с наркотиками на территории РФ Евгений Ройзман: «введение уголовного наказания за употребление наркотиков действительно может уменьшить число наркоманов в РФ». Мы изучили множество источников, доводов и исследований за последние два десятка лет, чтобы отделить статистику от информационного шума и оценить результаты подходов правительств разных стран в отношении запрещенных веществ. Эта статья ни в коем случае не пропагандирует употребление наркотических веществ ни в каком виде. Берегите себя и своё здоровье.
+        </p>
+    </div>
+</div>
+
+    <div class="card">
+    <a href=".">
+        <img class="card-img-top" src="/images/card-preview.png">
+    </a>
+    <div class="card-body">
+        <a href="."><h5 class="card-title">Как в Санкт-Петербурге оппозиционных депутатов лишают мандатов по надуманным поводам
+        </h5></a>
+        <div class="date">28 июня 2020</div>
+        <p class="card-text">
+            Казалось бы, петербуржцы выбрали своих муниципальных депутатов совсем недавно.
+        </p>
+    </div>
+</div>
+
+    <div class="card">
+    <a href=".">
+        <div class="card-img-container">
+                <img class="card-img-top" src="/images/banner.png">
+        </div>
+    </a>
+    <div class="card-body">
+        <a href="."><h5 class="card-title">
+            Сомы грамм — и... много драм. Как государство борется с наркотиками
+        </h5></a>
+        <div class="date">28 июня 2020</div>
+        <p class="card-text">
+            В последние годы мы слышим много противоречивых новостей о наркотиках. В Канаде легализуют марихуану, в Средней Азии растет производство героина, президент Филиппин обещает «накормить рыб в бухте Манилы телами наркоторговцев». Президент России говорит: «никакой либерализации [наркополитики] быть не может», похожее мнение высказывает главный борец с наркотиками на территории РФ Евгений Ройзман: «введение уголовного наказания за употребление наркотиков действительно может уменьшить число наркоманов в РФ». Мы изучили множество источников, доводов и исследований за последние два десятка лет, чтобы отделить статистику от информационного шума и оценить результаты подходов правительств разных стран в отношении запрещенных веществ. Эта статья ни в коем случае не пропагандирует употребление наркотических веществ ни в каком виде. Берегите себя и своё здоровье.
+        </p>
+    </div>
+</div>
+
+
+</div>
+<div class="pagination">
+    
+    <span class="pagination-page"><a href="">1</a></span>
+    <span class="pagination-skip"></span>
+    <span class="pagination-page"><a href="">22</a></span>
+    <span class="pagination-page active">23</span>
+    <span class="pagination-page"><a href="">24</a></span>
+    <span class="pagination-skip"></span>
+    <span class="pagination-page"><a href="">118</a></span>
+</div>
+
+
+		</div>
+		<div class="sidebar-container">
+			<div id="twitter-block" class="twitter-block">
+	<a class="twitter-timeline" data-lang="ru" data-dnt="true" data-height="810" href="https://twitter.com/libteaclub?ref_src=twsrc%5Etfw">
+		Последние события нашего движения из Твиттера
+	</a>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
+<div class="banner-container">
+    <a href = "/about">
+        <img class="banner" src="/images/banner.png">
+    </a>
+</div>
+
+		</div>
+	</div>
+	<footer>
+    <nav>
+	<a class="text-nowrap" href="/">Главная</a>
+	<a class="text-nowrap" href="/about">О нас</a>
+	<a class="text-nowrap" href="/join">Вступить</a>
+	<a class="text-nowrap" href="/donate">Поддержать</a>
+	<a class="text-nowrap" href="/contact">Контакты</a>
+</nav>
+
+    
+    <div id="footer-social-icons">
+	<a href="#"><i class="fab fa-telegram fa-lg"></i></a>
+	<a href="#"><i class="fab fa-vk fa-lg"></i></a>
+	<a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+	<a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+	<a href="#"><i class="fab fa-twitter fa-lg"></i></i></a>
+	<a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+	<a href="#"><i class="fa fa-envelope fa-lg"></i></a>
+</div>
+
+</footer>
+
+
+	
+		 <script src="/js/third-party/bootstrap.js"></script>
+		 <script src="/js/main.js"></script>
+</body>
+</html>

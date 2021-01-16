@@ -1,0 +1,198 @@
+#header {
+	display: grid;
+	
+	column-gap: 65px;
+	padding-bottom: 10px;
+	
+	@media (min-width: @xs-breakpoint){
+		grid-template-columns: min-content auto min-content;
+		grid-template-areas: "navbar-toggler logo   search"
+							 "navbar         navbar navbar";
+				
+		row-gap: 0;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+	}
+
+	@media (min-width: @lg-breakpoint){    
+		grid-template-columns: min-content auto;
+		grid-template-areas: "logo navbar"
+							"logo search"
+							!important;
+		row-gap: 13px;
+        
+		box-shadow: none;
+	}
+
+	margin-bottom: 26px;
+
+	@media(min-width: @xs-breakpoint) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	@media(min-width: @lg-breakpoint) {
+		margin-left: 26px;
+		margin-right: 26px;
+	}
+}
+
+#header-navbar-toggler{
+	grid-area: navbar-toggler;
+
+	// Нужно, чтобы иконки разного размера не растягивали секцию. Допустим, они все меньше 45.
+	> button > .fas {
+		min-width: 45px;
+	}
+}
+
+#header-logo {
+	grid-area: logo;
+
+	display: flex;
+	justify-content: center;
+
+	img {
+		height: 64px;
+	}
+}
+
+#header-navbar {
+	grid-area: navbar;
+	padding-right: 0;
+	padding-bottom: 0;
+
+	.header-navbar-links {
+		display: flex;
+
+		@media(min-width: @xs-breakpoint) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+
+		@media(min-width: @lg-breakpoint) {
+			flex-direction: row;
+			flex-wrap: nowrap;
+			width: auto;
+		}
+
+		.paired {
+			display: flex;
+
+			@media(min-width: @xs-breakpoint) {
+				min-width: 100%;
+			}
+
+			@media(min-width: @s-breakpoint) {
+				min-width: auto;
+				flex-grow: 2;
+			}
+		}
+
+		a {
+			.header-text;
+			.header-link;
+			text-align: center;
+			flex-grow: 1;
+
+			@media(min-width: @xs-breakpoint) {
+				padding: 5px;
+				font-size: 1.7rem;
+			}
+			@media(min-width: @s-breakpoint) {
+				padding: 0;
+				font-size: 1.4rem;
+			}
+			@media(min-width: @lg-breakpoint) {
+				padding-right: 1em;
+				padding-left: 1em;
+
+				&.active {
+					background-color: @bg-color-darker-transparent;
+					color: @accent-color-light;
+					border-radius: 1em;
+				}
+			}
+		}
+	}
+}
+
+#header-social-icons {
+	@media(min-width: @xs-breakpoint) {
+		display: none;
+	}
+
+	@media(min-width: @lg-breakpoint) {
+		display: flex;
+	}
+
+	a {
+		color: @fg-muted-color;
+		margin-left: 13px;
+
+		&:hover {
+			text-decoration: none;
+			color: @accent-color;
+		}
+	}
+}
+
+
+#header-search {
+	grid-area: search;
+	justify-content: space-between;
+	min-height: 64px; // Чтобы при пропадании логотипа в мобильной версии не менялся размер
+	
+	// Нужно, чтобы иконки разного размера не растягивали секцию. Допустим, они все меньше 45.
+	> button > .fas {
+		min-width: 45px;
+	}
+
+	@media (min-width: @xs-breakpoint){
+		display: none;
+	}
+
+	@media (min-width: @lg-breakpoint){
+		display: inline-block;
+	}
+}
+
+.search-toggled-mock {
+	#header-search {
+		display: flex !important;
+	}
+
+	#header-navbar-toggler{
+		display: none !important;
+	}
+	
+	#header-logo {
+		@media (min-width: @xs-breakpoint){
+			display: none !important;
+		}
+		@media (min-width: @lg-breakpoint){
+			display: flex !important;
+		}
+	}
+
+	.header-search-input-container {
+		padding-left: 26px;
+	}
+
+	&#header {
+		@media (min-width: @xs-breakpoint){
+			grid-template-columns: auto !important;
+			grid-template-areas: "search"
+								 "navbar"
+								 !important;
+		}
+		@media (min-width: @lg-breakpoint){
+			grid-template-columns: min-content auto !important;
+			grid-template-areas: "logo navbar"
+								"logo search"
+								!important;
+		}
+	}
+	
+}
+
